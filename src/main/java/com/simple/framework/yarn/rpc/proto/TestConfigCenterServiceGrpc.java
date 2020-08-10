@@ -1,22 +1,26 @@
-package com.simple.framework.yarn.rpc.proto;
+/*
+this class has no use in current project, just ignore this
+package com.simple.framework.yarn.rpc.service;
+
+import com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos;
 
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
-import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ClientCalls.blockingUnaryCall;
 import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
 import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 
+*/
 /**
- */
+ * Creates a new async stub that supports all call types for the service
+ * <p>
+ * Creates a new blocking-style stub that supports unary and streaming output calls on the service
+ * <p>
+ * Creates a new ListenableFuture-style stub that supports unary and streaming output calls on the service
+ *//*
+
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 0.15.0)",
     comments = "Source: test_rpc_service.proto")
@@ -24,78 +28,90 @@ public class TestConfigCenterServiceGrpc {
 
   private TestConfigCenterServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "com.simple.framework.yarn.rpc.proto.TestConfigCenterService";
+  public static final String SERVICE_NAME = "com.simple.framework.yarn.rpc.pb.impl.TestConfigCenterService";
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto,
-      com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> METHOD_PING =
+  public static final io.grpc.MethodDescriptor<TestRpcServiceProtos.RequestProto,
+      TestRpcServiceProtos.ResponseProto> METHOD_PING =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
-              "com.simple.framework.yarn.rpc.proto.TestConfigCenterService", "ping"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto.getDefaultInstance()));
+              "com.simple.framework.yarn.rpc.pb.impl.TestConfigCenterService", "ping"),
+          io.grpc.protobuf.ProtoUtils.marshaller(TestRpcServiceProtos.RequestProto.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(TestRpcServiceProtos.ResponseProto.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto,
-      com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> METHOD_ECHO =
+  public static final io.grpc.MethodDescriptor<TestRpcServiceProtos.RequestProto,
+      TestRpcServiceProtos.ResponseProto> METHOD_ECHO =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
-              "com.simple.framework.yarn.rpc.proto.TestConfigCenterService", "echo"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto.getDefaultInstance()));
+              "com.simple.framework.yarn.rpc.pb.impl.TestConfigCenterService", "echo"),
+          io.grpc.protobuf.ProtoUtils.marshaller(TestRpcServiceProtos.RequestProto.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(TestRpcServiceProtos.ResponseProto.getDefaultInstance()));
 
-  /**
-   * Creates a new async stub that supports all call types for the service
-   */
+  */
+/**
+ * Creates a new async stub that supports all call types for the service
+ *//*
+
   public static TestConfigCenterServiceStub newStub(io.grpc.Channel channel) {
     return new TestConfigCenterServiceStub(channel);
   }
 
-  /**
-   * Creates a new blocking-style stub that supports unary and streaming output calls on the service
-   */
+  */
+/**
+ * Creates a new blocking-style stub that supports unary and streaming output calls on the service
+ *//*
+
   public static TestConfigCenterServiceBlockingStub newBlockingStub(
       io.grpc.Channel channel) {
     return new TestConfigCenterServiceBlockingStub(channel);
   }
 
-  /**
-   * Creates a new ListenableFuture-style stub that supports unary and streaming output calls on the service
-   */
+  */
+/**
+ * Creates a new ListenableFuture-style stub that supports unary and streaming output calls on the service
+ *//*
+
   public static TestConfigCenterServiceFutureStub newFutureStub(
       io.grpc.Channel channel) {
     return new TestConfigCenterServiceFutureStub(channel);
   }
 
-  /**
-   */
+  */
+/**
+ *//*
+
   @java.lang.Deprecated public static interface TestConfigCenterService {
 
-    /**
-     */
-    public void ping(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request,
-        io.grpc.stub.StreamObserver<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> responseObserver);
+    */
+/**
+ *//*
 
-    /**
-     */
-    public void echo(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request,
-        io.grpc.stub.StreamObserver<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> responseObserver);
+    public void ping(TestRpcServiceProtos.RequestProto request,
+                     io.grpc.stub.StreamObserver<TestRpcServiceProtos.ResponseProto> responseObserver);
+
+    */
+/**
+ *//*
+
+    public void echo(TestRpcServiceProtos.RequestProto request,
+                     io.grpc.stub.StreamObserver<TestRpcServiceProtos.ResponseProto> responseObserver);
   }
 
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1469")
   public static abstract class TestConfigCenterServiceImplBase implements TestConfigCenterService, io.grpc.BindableService {
 
     @java.lang.Override
-    public void ping(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request,
-        io.grpc.stub.StreamObserver<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> responseObserver) {
+    public void ping(TestRpcServiceProtos.RequestProto request,
+                     io.grpc.stub.StreamObserver<TestRpcServiceProtos.ResponseProto> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_PING, responseObserver);
     }
 
     @java.lang.Override
-    public void echo(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request,
-        io.grpc.stub.StreamObserver<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> responseObserver) {
+    public void echo(TestRpcServiceProtos.RequestProto request,
+                     io.grpc.stub.StreamObserver<TestRpcServiceProtos.ResponseProto> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_ECHO, responseObserver);
     }
 
@@ -104,32 +120,44 @@ public class TestConfigCenterServiceGrpc {
     }
   }
 
-  /**
-   */
+  */
+/**
+ *//*
+
   @java.lang.Deprecated public static interface TestConfigCenterServiceBlockingClient {
 
-    /**
-     */
-    public com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto ping(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request);
+    */
+/**
+ *//*
 
-    /**
-     */
-    public com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto echo(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request);
+    public TestRpcServiceProtos.ResponseProto ping(TestRpcServiceProtos.RequestProto request);
+
+    */
+/**
+ *//*
+
+    public TestRpcServiceProtos.ResponseProto echo(TestRpcServiceProtos.RequestProto request);
   }
 
-  /**
-   */
+  */
+/**
+ *//*
+
   @java.lang.Deprecated public static interface TestConfigCenterServiceFutureClient {
 
-    /**
-     */
-    public com.google.common.util.concurrent.ListenableFuture<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> ping(
-        com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request);
+    */
+/**
+ *//*
 
-    /**
-     */
-    public com.google.common.util.concurrent.ListenableFuture<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> echo(
-        com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request);
+    public com.google.common.util.concurrent.ListenableFuture<TestRpcServiceProtos.ResponseProto> ping(
+        TestRpcServiceProtos.RequestProto request);
+
+    */
+/**
+ *//*
+
+    public com.google.common.util.concurrent.ListenableFuture<TestRpcServiceProtos.ResponseProto> echo(
+        TestRpcServiceProtos.RequestProto request);
   }
 
   public static class TestConfigCenterServiceStub extends io.grpc.stub.AbstractStub<TestConfigCenterServiceStub>
@@ -150,15 +178,15 @@ public class TestConfigCenterServiceGrpc {
     }
 
     @java.lang.Override
-    public void ping(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request,
-        io.grpc.stub.StreamObserver<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> responseObserver) {
+    public void ping(TestRpcServiceProtos.RequestProto request,
+                     io.grpc.stub.StreamObserver<TestRpcServiceProtos.ResponseProto> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_PING, getCallOptions()), request, responseObserver);
     }
 
     @java.lang.Override
-    public void echo(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request,
-        io.grpc.stub.StreamObserver<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> responseObserver) {
+    public void echo(TestRpcServiceProtos.RequestProto request,
+                     io.grpc.stub.StreamObserver<TestRpcServiceProtos.ResponseProto> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_ECHO, getCallOptions()), request, responseObserver);
     }
@@ -182,13 +210,13 @@ public class TestConfigCenterServiceGrpc {
     }
 
     @java.lang.Override
-    public com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto ping(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request) {
+    public TestRpcServiceProtos.ResponseProto ping(TestRpcServiceProtos.RequestProto request) {
       return blockingUnaryCall(
           getChannel(), METHOD_PING, getCallOptions(), request);
     }
 
     @java.lang.Override
-    public com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto echo(com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request) {
+    public TestRpcServiceProtos.ResponseProto echo(TestRpcServiceProtos.RequestProto request) {
       return blockingUnaryCall(
           getChannel(), METHOD_ECHO, getCallOptions(), request);
     }
@@ -212,15 +240,15 @@ public class TestConfigCenterServiceGrpc {
     }
 
     @java.lang.Override
-    public com.google.common.util.concurrent.ListenableFuture<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> ping(
-        com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request) {
+    public com.google.common.util.concurrent.ListenableFuture<TestRpcServiceProtos.ResponseProto> ping(
+        TestRpcServiceProtos.RequestProto request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_PING, getCallOptions()), request);
     }
 
     @java.lang.Override
-    public com.google.common.util.concurrent.ListenableFuture<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto> echo(
-        com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto request) {
+    public com.google.common.util.concurrent.ListenableFuture<TestRpcServiceProtos.ResponseProto> echo(
+        TestRpcServiceProtos.RequestProto request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_ECHO, getCallOptions()), request);
     }
@@ -249,12 +277,12 @@ public class TestConfigCenterServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_PING:
-          serviceImpl.ping((com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto) request,
-              (io.grpc.stub.StreamObserver<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto>) responseObserver);
+          serviceImpl.ping((TestRpcServiceProtos.RequestProto) request,
+              (io.grpc.stub.StreamObserver<TestRpcServiceProtos.ResponseProto>) responseObserver);
           break;
         case METHODID_ECHO:
-          serviceImpl.echo((com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto) request,
-              (io.grpc.stub.StreamObserver<com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto>) responseObserver);
+          serviceImpl.echo((TestRpcServiceProtos.RequestProto) request,
+              (io.grpc.stub.StreamObserver<TestRpcServiceProtos.ResponseProto>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -285,16 +313,17 @@ public class TestConfigCenterServiceGrpc {
           METHOD_PING,
           asyncUnaryCall(
             new MethodHandlers<
-              com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto,
-              com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto>(
+              TestRpcServiceProtos.RequestProto,
+              TestRpcServiceProtos.ResponseProto>(
                 serviceImpl, METHODID_PING)))
         .addMethod(
           METHOD_ECHO,
           asyncUnaryCall(
             new MethodHandlers<
-              com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.RequestProto,
-              com.simple.framework.yarn.rpc.proto.TestRpcServiceProtos.ResponseProto>(
+              TestRpcServiceProtos.RequestProto,
+              TestRpcServiceProtos.ResponseProto>(
                 serviceImpl, METHODID_ECHO)))
         .build();
   }
 }
+*/
